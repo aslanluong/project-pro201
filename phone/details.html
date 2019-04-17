@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Mắc mobile - Hệ thống bán lẻ điện thoại chính hãng</title>
+	<link rel="shortcut icon" href="../img/favicon.ico">
+	<link href='https://fonts.googleapis.com/css?family=Source+Sans+Pro' rel='stylesheet' type='text/css'>
+	<link href="https://use.fontawesome.com/releases/v5.0.8/css/all.css" rel="stylesheet">
+	<link rel="stylesheet" href="../general.css" type="text/css"/>
+	<link rel="stylesheet" href="sanpham.css" type="text/css"/>
+	<script type="text/javascript" src="../general.js"></script>
+</head>
+<body onload="onload_phoneDetails()">
+	<!-- Begin Header -->
+	<div id="header-cointainer">
+			<div id="header">
+				<div id="headerl">
+					<a href="../index.html"><img src="../img/macmobile.png"/></a>
+					<div class="box">
+						  <div class="search-container">
+						  <span class="icon"><i class="fa fa-search"></i></span>
+						  <input type="search" id="search" placeholder="Tìm sản phẩm, vd: S9, Iphone X,..." onkeypress="timkiem(this)" />
+						  </div>
+					</div>
+				</div>
+				<div id="headerr">
+					<a href="../mm-phone.html"><div class="hrmini">
+						<img src="../img/phone.png"> <br>
+						Sản Phẩm
+					</div></a>
+					<a href="../mm-installment.html"><div class="hrmini">
+						<img src="../img/installment.svg"> <br>
+						Trả góp
+					</div></a>
+					<a href="https://facebook.com"><div class="hrmini">
+						<img src="../img/facebook.svg"> <br>
+						Facebook
+					</div></a>
+					<a href="../mm-about.html"><div class="hrmini">
+						<img src="../img/about.svg"> <br>
+						Giới thiệu
+					</div></a>
+				</div>
+			</div>
+			</div>
+			<!-- End Header -->
+	<div id="phone-container">
+		<div id="phone-info">
+			<p><a class="homelink" href="../index.html">Home</a> <i class="fa fa-angle-right"></i><span class="tensp"></span></p>
+			<h2 class="tensp"></h2>
+			<hr>
+			<div class="phone-info-cot">
+				<div id="khung-anh"><img src="" id="khung_anh"></div>
+				<div id="khung-baohanh">
+				<b>Tình trạng</b>
+				<br>Máy mới nguyên hộp, imei trùng hộp
+				<br><b>Bảo hành</b>
+				<br>BH 1 đổi 1 trong 12 tháng (cả lỗi nguồn, màn hình)
+				</div>
+			</div>
+			<div class="phone-info-cot">
+				<b>Mua hàng ở khu vực nào</b><br>
+				<select id="khuvuc" onchange="khuvuc(this)">
+				<option value="Hồ Chí Minh">Hồ Chí Minh</option>
+				<option value="Hà Nội">Hà Nội</option>
+				</select> <br>
+				<b>Màu sắc:</b>
+				<ul id="chonmau"></ul>
+				<h2 id="gia"></h2>
+				<div id="khuyenmai">
+					<ul>
+						<li>* Dán màn hình cả năm chỉ từ <span id="gia" class="giamoi">69.000đ</span> (Chi tiết)</li>
+						<li>* Giảm thêm <span id="gia" class="giamoi">10%</span> (tối đa <span id="gia" class="giamoi">200.000đ</span>) giá dịch vụ bảo hành phát sinh cho hội viên Macmember <a href="../mm-macmember.html" style="color: #d70018; font-style: italic;">(Chi tiết)</a></li>
+						<li>* Trả góp lãi suât 0% với thẻ tín dụng ANZ, Sacombank, Nam Á Bank, Shinhanbank 
+							<a href="../mm-installment.html" style="color: #d70018; font-style: italic;">(Chi tiết)</a></li>
+						<li><em>* Miễn phí cà thẻ (ngoại trừ AMEX, UnionPay &amp; JCB)</em></li>
+					</ul>
+				</div>
+				<div class="mua-tragop" id="mua" onclick="datmua()">
+					<b>MUA NGAY</b> <br> (Giao tận nơi hoặc lấy tại cửa hàng)
+				</div>
+				<div id="datmua">
+					<div id="datmua_trai"></div>
+					<div id="datmua_phai">
+						Tên (bắt buộc): <input type="text" name="" id="in1">
+						<br>Số điện thoại (bắt buộc): <input type="text" name="" id="in2">
+						<br>Lưu ý: <input type="text" name="" id="in3">
+						<br><label for="ghtn">
+							<input type="radio" name="ptgh" value="Nhận hàng tận nhà" id="ghtn" onclick="diachi()">Nhận hàng tại nhà</label>&emsp;
+						<label for="nhts">
+							<input type="radio" name="ptgh" value="Nhận hàng tại shop" id="nhts" onclick="diachi()">Nhận hàng tại shop</label>
+						<div id="diachi">
+							Địa chỉ: <input type="text" name="" id="in4">
+						</div>
+						<div id="taishop">
+							Nhận hàng tại tất cả cửa hàng khu vực Hồ Chí Minh
+						</div>
+					</div>
+					<div id="dathang"><input type="button" name="" value="ĐẶT HÀNG" onclick="dathang_submit()"></div>
+					<div id="huy" onclick="huy()">X</div>
+				</div>
+				<a href="../mm-installment.html"><div class="mua-tragop" id="tragop">
+					<b>TRẢ GÓP</b> <br> (Xét duyệt hồ sơ qua điện thoại)
+				</div></a>
+				<div style="text-align: center; margin-top: -7px; font-size: 15px">Gọi đặt mua: 1900.9999</div>
+			</div>
+			<div class="phone-info-cot" id="ptc3">
+				
+				<div id="thongsokt">
+					<div id="thongsokt-chinh">
+						Thông số kỹ thuật
+					</div>
+					<div id="thongsokt-chitiet">
+						<div class="thongso">Kết nối:</div><div class="thongtin"></div>
+						<hr><div class="thongso">Kích thước:</div><div class="thongtin"></div>
+						<hr><div class="thongso">Trọng lượng:</div><div class="thongtin"></div>
+						<hr><div class="thongso">SIM:</div><div class="thongtin"></div>
+						<hr><div class="thongso">Kích thước màn hình:</div><div class="thongtin"></div>
+						<hr><div class="thongso">Loại màn hình:</div><div class="thongtin"></div>
+						<hr><div class="thongso">Độ phân giải:</div><div class="thongtin"></div>
+						<hr><div class="thongso">Hệ điều hành:</div><div class="thongtin"></div>
+						<hr><div class="thongso">Chipset:</div><div class="thongtin"></div>
+						<hr><div class="thongso">CPU:</div><div class="thongtin"></div>
+						<hr><div class="thongso">GPU:</div><div class="thongtin"></div>
+						<hr><div class="thongso">Bộ nhớ:</div><div class="thongtin"></div>
+						<hr><div class="thongso">Khe thẻ nhớ:</div><div class="thongtin"></div>
+						<hr><div class="thongso">Camera:</div><div class="thongtin"></div>
+						<hr><div class="thongso">PIN:</div><div class="thongtin"></div>
+
+					</div>
+				</div>
+			</div>
+			<hr>
+		</div>
+	</div>
+	<!-- Begin Footer-->
+	<div id="footer-container">
+			<div id="footer">
+				<div class="cotf">
+					<ul><span>Thông tin liên lạc</span>
+						<li>Hotline: <b>(SE)63356</b></li>
+						<li>Thời gian phục vụ: 8h30 - 21h30 </li>
+						<li>Email: cskh@mac.mobile</li>
+						<li><img src="../img/logo-da-thong-bao-bct-copy.png" width="200" height="76"></li>
+					</ul>
+				</div>
+				<div class="cotf">
+					<ul><span>Thông tin hỗ trợ</span>
+						<li><a href="../mm-about.html">Giới thiệu</a></li>
+						<li><a href="../mm-installment.html">Trả góp</a></li>
+						<li><a href="../mm-macmember.html">Macmember</a></li>
+						<li><a href="../mm-feedback.html">Góp ý</a></li>
+						<li style="color: red">Upload date: 04/17/2019</li>
+					</ul>
+				</div>
+				<div class="cotf">
+					<ul><span>Hệ thống cửa hàng ở&nbsp;</span>
+						<select id="vitri" onchange="vitri()">
+							<option value="0" disabled selected>Chọn khu vực</option>
+							<option value="1">Hồ Chí Minh</option>
+							<option value="2">Hà Nội</option>
+						</select>
+						<div id="vitri-chitiet">
+							
+						</div>
+		
+					</ul>
+				</div>
+			</div>
+			</div>
+			<!-- End Footer-->
+</body>
+</html>

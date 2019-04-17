@@ -1,0 +1,177 @@
+	<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Mắc mobile - Hệ thống bán lẻ điện thoại chính hãng</title>
+	<link rel="shortcut icon" href="img/favicon.ico">
+	<link href='https://fonts.googleapis.com/css?family=Source+Sans+Pro' rel='stylesheet' type='text/css'>
+	<link href="https://use.fontawesome.com/releases/v5.0.8/css/all.css" rel="stylesheet">
+	<link rel="stylesheet" href="general.css" type="text/css"/>
+	<script type="text/javascript" src="general.js"></script>
+<style type="text/css">
+	#khuyenmai-ctn {width: 100%; height: 370px; /*cao thân*/; float: left;}
+	#khuyenmai {width: 1200px; height: 100%; margin: auto; box-sizing: border-box;}
+	#kml {width: 66%; height: 100%; float: left;border: 1px solid #eee;box-sizing: border-box;}
+	#hinhkm_ngoai { width: 100%; height: 81%; background-color: white; box-sizing: border-box; overflow: hidden;}
+	#hinhkm_trong { width: 400%; height: 100%; box-sizing: border-box;}
+	#hinhkm_trong img {width: 25%; height: 100%;float: left;}
+	.tinkm {width: 25%; height: 19%; float: left; text-align: center; box-sizing: border-box;
+		border: 0.1px solid #eee; padding-top: 1.6%;}
+	.tinkm:hover {cursor: pointer;}
+	#kmr {width: 33%; height: 100%; margin-left: 1%; float: left;}
+	#kmr_up {width: 100%; height: 48%;}
+	#kmr_down {width: 100%; height: 48%;}
+	#kmr img {width: 100%; height: 100%;margin: auto;}
+	/* bán chạy nhất */
+	#banchay-container { width: 100%; height: auto; margin-top: 20px; float: left /*kcách trên*/;
+		}
+	#banchay { width: 1200px; height: 50px; 
+		margin: auto; line-height: 50px/*căn chữ giữa dọc*/;
+		border: 1px solid #eee;
+		box-sizing: border-box;
+		background-color: white;
+	}
+	#bcn {height: 48px; float: left; padding: 0 15px 0 15px; font-size: 20px;background-color: #B6B6B6;
+		font-weight: bold; color: #0a263c;}
+	.arrow-right {
+	border-top: 24px solid transparent;
+	border-bottom: 24px solid transparent /*trong suốt */;
+	float: left;
+	border-left: 25px solid #B6B6B6;
+	}
+	.namdt {width: 1200px; height: 355px; margin: auto; box-sizing: border-box;}
+</style>
+</head>
+<body onload="truot(0)">
+	<!-- Begin Header -->
+	<div id="header-cointainer">
+	<div id="header">
+		<div id="headerl">
+			<a href="index.html"><img src="img/macmobile.png"/></a>
+			<div class="box">
+  				<div class="search-container">
+      			<span class="icon"><i class="fa fa-search"></i></span>
+      			<input type="search" id="search" placeholder="Tìm sản phẩm, vd: S9, Iphone X,..." onkeypress="timkiem(this)" />
+  				</div>
+			</div>
+		</div>
+		<div id="headerr">
+			<a href="mm-phone.html"><div class="hrmini">
+				<img src="img/phone.png"> <br>
+				Sản Phẩm
+			</div></a>
+			<a href="mm-installment.html"><div class="hrmini">
+				<img src="img/installment.svg"> <br>
+				Trả góp
+			</div></a>
+			<a href="https://facebook.com"><div class="hrmini">
+				<img src="img/facebook.svg"> <br>
+				Facebook
+			</div></a>
+			<a href="mm-about.html"><div class="hrmini">
+				<img src="img/about.svg"> <br>
+				Giới thiệu
+			</div></a>
+		</div>
+	</div>
+	</div>
+	<!-- End Header -->
+	<div id="khuyenmai-ctn">
+	<div id="khuyenmai">
+		<div id="kml">
+			<div id="hinhkm_ngoai">
+				<div id="hinhkm_trong">
+				<a href="phone/details.html?name=samsung-galaxy-s9&pcode=1"><img src="img/tinkm1.png"></a>
+				<a href="phone/details.html?name=nokia-8&pcode=26"><img src="img/tinkm2.jpg"></a>
+				<img src="img/tinkm3.jpg">
+				<a href="phone/details.html?name=samsung-galaxy-j7pro&pcode=7"><img src="img/tinkm4.jpg"></a>
+				</div>
+			</div>
+			<div class="tinkm" name="tinkm" onclick="truot(0)">Đặt trước Galaxy S9<br> Nhận quà cực khủng</div>
+			<div class="tinkm" name="tinkm" onclick="truot(1)">Mua Nokia 8 <br> Giảm tới 4,5 triệu đồng</div>
+			<div class="tinkm" name="tinkm" onclick="truot(2)">Mua loa Harman Kardon <br> Giảm ngay tới 40%</div>
+			<div class="tinkm" name="tinkm" onclick="truot(3)">Hotsale Galaxy J7 Pro<br> Giảm tới 1.5 triệu đồng</div>
+		</div>
+		<div id="kmr">
+			<div id="kmr_up"><a href="phone/details.html?name=apple-iphone-x&pcode=10"><img src="img/kmbanner-right-1.jpg"></a></div>
+			<div name="kmr_blank" style="height: 4%; width: 100%;"></div>
+			<div id="kmr_down"><a href="phone/details.html?name=samsung-galaxy-s8&pcode=3"><img src="img/kmbanner-right-2.jpg"></a></div>
+		</div>
+	</div></div>
+	<div id="banchay-container">
+		<div id="banchay">
+		<div id="bcn">Bán chạy nhất</div><div class="arrow-right"></div>
+		</div>
+		<div class="namdt">
+		<div class="khungsp">
+			<script type="text/javascript">khungsp(1,1)</script>
+		</div>
+		<div class="khungsp">
+			<script type="text/javascript">khungsp(2,3)</script>
+		</div>
+		<div class="khungsp">
+			<script type="text/javascript">khungsp(3,10)</script>
+		</div>
+		<div class="khungsp">
+			<script type="text/javascript">khungsp(4,23)</script>
+		</div>
+		<div class="khungsp">
+			<script type="text/javascript">khungsp(5,13)</script>
+		</div>
+		</div>
+		<div class="namdt">
+		<div class="khungsp">
+			<script type="text/javascript">khungsp(6,9)</script>
+		</div>
+		<div class="khungsp">
+			<script type="text/javascript">khungsp(7,20)</script>
+		</div>
+		<div class="khungsp">
+			<script type="text/javascript">khungsp(8,25)</script>
+		</div>
+		<div class="khungsp">
+			<script type="text/javascript">khungsp(9,22)</script>
+		</div>
+		<div class="khungsp">
+			<script type="text/javascript">khungsp(10,26)</script>
+		</div>
+		</div>
+	</div>
+	<!-- Begin Footer-->
+	<div id="footer-container">
+	<div id="footer">
+		<div class="cotf">
+			<ul><span>Thông tin liên lạc</span>
+				<li>Hotline: <b>(SE)63356</b></li>
+				<li>Thời gian phục vụ: 8h30 - 21h30 </li>
+				<li>Email: cskh@mac.mobile</li>
+				<li><img src="img/logo-da-thong-bao-bct-copy.png" width="200" height="76"></li>
+			</ul>
+		</div>
+		<div class="cotf">
+			<ul><span>Thông tin hỗ trợ</span>
+				<li><a href="mm-about.html">Giới thiệu</a></li>
+				<li><a href="mm-installment.html">Trả góp</a></li>
+				<li><a href="mm-macmember.html">Macmember</a></li>
+				<li><a href="mm-feedback.html">Góp ý</a></li>
+				<li style="color: red">Upload date: 04/17/2019</li>
+			</ul>
+		</div>
+		<div class="cotf">
+			<ul><span>Hệ thống cửa hàng ở&nbsp;</span>
+				<select id="vitri" onchange="vitri()">
+					<option value="0" disabled selected>Chọn khu vực</option>
+					<option value="1">Hồ Chí Minh</option>
+					<option value="2">Hà Nội</option>
+				</select>
+				<div id="vitri-chitiet">
+
+				</div>
+
+			</ul>
+		</div>
+	</div>
+	</div>
+	<!-- End Footer-->
+</body>
+</html>

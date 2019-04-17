@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Mắc mobile - Hệ thống bán lẻ điện thoại chính hãng</title>
+	<link rel="shortcut icon" href="img/favicon.ico">
+	<link href='https://fonts.googleapis.com/css?family=Source+Sans+Pro' rel='stylesheet' type='text/css'>
+	<link href="https://use.fontawesome.com/releases/v5.0.8/css/all.css" rel="stylesheet">
+	<link rel="stylesheet" href="general.css" type="text/css"/>
+	<script type="text/javascript" src="general.js"></script>
+<style type="text/css">
+	#about-container {width: 1200px; height: auto; margin: auto;}
+	#about-container h1 {text-align: center; color: #d70018;}
+	#about-left {width: 50%; height: auto; float: left; font-size: 19px; padding-left: 5%; box-sizing: border-box;}
+	#about-left ul {list-style-type: none; padding-left: 0px;}
+	#about-left li {margin-top: 7px;}
+	#about-right {width: 50%; height: auto; float: left; text-align: right;}
+</style>
+</head>
+<body>
+	<!-- Begin Header -->
+	<div id="header-cointainer">
+		<div id="header">
+			<div id="headerl">
+				<a href="index.html"><img src="img/macmobile.png"/></a>
+				<div class="box">
+					  <div class="search-container">
+					  <span class="icon"><i class="fa fa-search"></i></span>
+					  <input type="search" id="search" placeholder="Tìm sản phẩm, vd: S9, Iphone X,..." onkeypress="timkiem(this)" />
+					  </div>
+				</div>
+			</div>
+			<div id="headerr">
+				<a href="mm-phone.html"><div class="hrmini">
+					<img src="img/phone.png"> <br>
+					Sản Phẩm
+				</div></a>
+				<a href="mm-installment.html"><div class="hrmini">
+					<img src="img/installment.svg"> <br>
+					Trả góp
+				</div></a>
+				<a href="https://facebook.com"><div class="hrmini">
+					<img src="img/facebook.svg"> <br>
+					Facebook
+				</div></a>
+				<a href="mm-about.html"><div class="hrmini" style="background-color: #d70018; color: white;">
+					<img src="img/about.svg"> <br>
+					Giới thiệu
+				</div></a>
+			</div>
+		</div>
+		</div>
+		<!-- End Header -->
+	<div id="about-container"><h1>Hệ thống cửa hàng Mắc Mobile</h1>
+		<div id="about-left">
+		<ul>
+		<li>“Tận tâm với khách hàng”, MacMobile luôn nỗ lực mang tới dịch vụ và trải nghiệm tốt nhất:</li>
+		<li>– Nhân viên thân thiện, gửi xe &amp; Wifi miễn phí.</li>
+		<li>– Hướng dẫn cài đặt &amp; sử dụng ứng dụng, game,… miễn phí.</li>
+		<li>– Trải nghiệm trực tiếp, và dùng thử sản phẩm miễn phí.</li>
+		<li>– Tiếp nhận bảo hành chính hãng.</li>
+		<li>– Miễn phí cà thẻ (ngoại trừ AMEX, UnionPay &amp; JCB).</li>
+		<li>– Trả góp từ 0% qua thẻ tín dụng quốc tế &amp; công ty tài chính.</li>
+		<li>– Thanh toán hóa đơn trả góp, điện, nước, internet, nạp tiền điện thoại tiết kiệm tới 5%.</li>
+		<li>– Giao hàng miễn phí, thanh toán tại nhà trên Toàn quốc.</li>
+		</ul>
+		</div>
+		<div id="about-right">
+			<img src="img/about.png">
+		</div>
+	</div>
+	<!-- Begin Footer-->
+	<div id="footer-container">
+			<div id="footer">
+				<div class="cotf">
+					<ul><span>Thông tin liên lạc</span>
+						<li>Hotline: <b>(SE)63356</b></li>
+						<li>Thời gian phục vụ: 8h30 - 21h30 </li>
+						<li>Email: cskh@mac.mobile</li>
+						<li><img src="img/logo-da-thong-bao-bct-copy.png" width="200" height="76"></li>
+					</ul>
+				</div>
+				<div class="cotf">
+					<ul><span>Thông tin hỗ trợ</span>
+						<li><a href="mm-installment.html">Trả góp</a></li>
+						<li><a href="mm-macmember.html">Macmember</a></li>
+						<li><a href="mm-feedback.html">Góp ý</a></li>
+						<li style="color: red">Upload date: 04/17/2019</li>
+					</ul>
+				</div>
+				<div class="cotf">
+					<ul><span>Hệ thống cửa hàng ở&nbsp;</span>
+						<select id="vitri" onchange="vitri()">
+							<option value="0" disabled selected>Chọn khu vực</option>
+							<option value="1">Hồ Chí Minh</option>
+							<option value="2">Hà Nội</option>
+						</select>
+						<div id="vitri-chitiet">
+							
+						</div>
+		
+					</ul>
+				</div>
+			</div>
+			</div>
+			<!-- End Footer-->
+</body>
+</html>

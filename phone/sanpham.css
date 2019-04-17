@@ -1,0 +1,63 @@
+	/* css trang sản phẩm */
+	body {background-color: white;}
+	#phone-container { width: 100%; height: auto; float: left;}
+	#phone-info { width: 1200px; height: auto; margin: auto; box-sizing: border-box;}
+	#phone-info i { color: #ccc; font-size: 15px; margin: 0 5px;}
+	h2 {color: #393d3f; margin-bottom: 5px;}
+	hr { border: 1px solid #eee;}
+	.phone-info-cot { width: 400px; height: 600px; float: left;
+		font-size: 17px; line-height: 45px; box-sizing: border-box;}
+	.phone-info-cot select { height: 45px; width: 100%; font-size: 15px; padding-left: 10px;
+		font-family: 'FontAwesome','Source Sans Pro', tahoma, sans-serif;}
+	#khung-anh { width: 96%; height: 400px; border: 1px solid #eee; margin: auto; box-sizing: border-box;
+			padding: 3% 0 0 2%;}
+	#khung-anh img {width: 96%; height: 96%;}
+	#khung-baohanh { width: 96%; height: 180px; margin: auto; box-sizing: border-box; padding-left: 15px;}
+	#chonmau {padding-left: 0;margin-top: 0;}
+	#chonmau li {list-style-type: none; float: left; border-radius: 100%; height: 21px; width: 21px;
+		border: 2px solid #aaa; margin-right: 5px;}
+	/*#mau-bac {background-color: silver;}
+	#mau-vang {background-color: gold;}
+	#mau-hong {background-color: pink;}
+	#mau-den {background-color: black;}*/
+	#gia {margin-left: -10px; margin-top: 30px; font-weight: bold;}
+	#khuyenmai {width: 100%; height: 200px; border: 2px dashed red; box-sizing: border-box; color: #3c3d41;}
+	#khuyenmai ul {list-style-type: none; line-height: 30px; padding: 0 10px 0 10px; margin-top: 5px}
+	
+	.mua-tragop {width: 100%; height: 60px; box-sizing: border-box;
+		padding-top: 10px; line-height: 20px; border-radius: 5px; margin-top: 15px;
+		text-align: center; color: white;}
+		.mua-tragop b { font-size: 1.1em; }
+	#mua { border: 1px solid #e11b1e; background-color: #e11b1e;}
+	#mua:hover { background-color: white; color: #e11b1e;}
+	#tragop {border: 1px solid #277cea; background-color: #277cea;}
+	#tragop:hover {background-color: white; color: #277cea;}
+	#datmua {width: 50%; height: 40%;z-index: 10; position: fixed; bottom: 15%; right: 25%;	
+			opacity: 0.97; margin: auto; display: none;
+			box-shadow: 0px 0px 10px 5px; overflow: hidden;}
+	#datmua img {width: 100%; height: 86%; margin: auto;}
+	#datmua_trai {width: 35%; height: 100%; box-sizing: border-box; float: left;border-right: 3px solid black; font-size: 19px;
+			background-color: white; line-height: 30px; text-align: center; font-weight: bold; color: #d70018;}
+	#datmua_phai {width: 65%; height: 80%; box-sizing: border-box; line-height: 40px; float: left;background-color: #FF2A2A;
+			padding: 10px 0 0 20px; float: left;}
+	#datmua_phai input {font-family: 'FontAwesome','Source Sans Pro', tahoma, sans-serif; font-size: 16px;}
+	#dathang { width: 65%; height: 20%; margin: auto;text-align: center; background-color: #FF2A2A;float: left;
+			box-sizing: border-box;}
+	#dathang input {background-color: white; width: 100px; height: 30px; font-size: 17px;
+			font-family: 'FontAwesome','Source Sans Pro', tahoma, sans-serif;}
+	#dathang input:hover {font-weight: bold;}
+	#diachi {display: none;}
+	#taishop {display: none;}
+	#in1 {width: 250px; height: 20px;}
+	#in2 {width: 182px; height: 20px;}
+	#in3 {width: 313px; height: 20px;}
+	#in4 {width: 303px; height: 20px;}
+	#huy {position: absolute; top: 0px; right: 13px; font-weight: bold; font-size: 20px;cursor: pointer;}
+	#thongsokt { width: 98%; float: left; margin-top: 15px; height: auto;margin-left: 2%; line-height: 30px; margin-top: 10px;
+		box-sizing: border-box; border: 2px solid #eee; }
+	#thongsokt-chinh { width: 100%; line-height: 50px;background-color: #f7f7f7; text-align: center; box-sizing: border-box; border-bottom: 2px solid #eee; color: #d70018; font-weight: bold;}
+	#thongsokt-chitiet {width: 100%; height: auto; box-sizing: border-box;
+		 line-height: 25px;float: left; font-size: 15px;}
+	#thongsokt-chitiet hr { margin: 1px 3% 1px 3%; border: 1px solid #eee; width: 94%;}
+	.thongso { width: 30%; float: left; padding-left: 3%; box-sizing: border-box;}
+	.thongtin {width: 70%; float: left; font-weight: bold; color: #3c3d41; padding-right: 3%; box-sizing: border-box;}
